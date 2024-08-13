@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #1e0533, #110a1f);
+  color: #ffffff;
+ 
+}
+header {
+  position: relative;
+    width: 100vw;
+    height: 20vh;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo img {
+  width: 5vw;
+  height: auto;
+}
+
+.logo h4 {
+  font-size: 2.4vw;
+}
+
+.icon {
+  width: 2.5vw;
+  height: 2.5vw;
+  background: linear-gradient(45deg, #726bff, #57b6fe);
+  border-radius: 50%;
+  margin-right: .5vw;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap; 
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5vw;
+  margin-left: 1vw;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #8a2be2;
+}
+
+.button {
+  background: linear-gradient(45deg, #726bff, #57b6fe);
+  color: #ffffff;
+  padding: .5vw 1vw;
+  border-radius: .5vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+.button:hover{
+  transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+    header {
+      flex-direction: column; 
+      height: auto; 
+      padding: 5vw 3vw; 
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logo {
+      margin-bottom: 2.5vw;
+    }
+  
+    .logo img {
+      width: 10vw; 
+    }
+  
+    .logo h4 {
+      font-size: 4vw; 
+    }
+  
+    .icon {
+      width: 5vw; 
+      height: 5vw;
+      margin-right: 1vw;
+    }
+  
+    nav {
+      flex-direction: row; 
+      flex-wrap: nowrap;
+      overflow-x: hidden; 
+      width: 100%; 
+      justify-content: space-evenly;
+    }
+  
+    nav a {
+      font-size: 3vw; 
+    }
+  
+    .button {
+      padding: 1vw 2vw; 
+      font-size: 2vw; 
+      border-radius: 4vw; 
+    }
+  }
+  #string{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vw;
+    z-index: 1;
+  }
+  
